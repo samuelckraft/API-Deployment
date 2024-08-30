@@ -24,6 +24,6 @@ def get_sums(int):
 
     return answer
 
-
-if __name__ == '__main__':
-    app.run(debug=True)
+# Gunicorn takes care of this
+# if __name__ == '__main__':
+#     app.run(debug=True)
