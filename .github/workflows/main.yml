@@ -33,3 +33,9 @@ jobs:
         run: |
           python -m pytest test_mock.py
           python -m unittest test_app.py
+
+      - name: Deploy to production
+        uses: johnbeynon/render-deploy-action@v.0.0.8
+        with:
+          service-id: $({ secrets.SERVICE_ID })
+          api-key: ${{ secrets.RENDER_API_KEY }}
